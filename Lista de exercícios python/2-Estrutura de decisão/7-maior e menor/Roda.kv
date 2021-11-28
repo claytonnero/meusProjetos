@@ -1,0 +1,46 @@
+<Rodando>:
+    anchor_x:"center"
+    anchor_y:"center"
+    BoxLayout:
+        orientation:"vertical"
+        size_hint_x:.6
+        size_hint_y:None
+        height:"121dp"
+        spacing:15
+        TextInput:
+            id:num1
+            hint_text:"Primeiro Número"
+            multiline:False
+            input_filter:"int"
+            size_hint_y:None
+            height:"40dp"
+        TextInput:
+            id:num2
+            hint_text:"Segundo Número"
+            multiline:False 
+            input_filter:"int"
+            size_hint_y:None
+            height:"40dp"
+        TextInput:
+            id:num3
+            hint_text:"Terceiro Número"
+            multiline:False 
+            input_filter:"int"
+            size_hint_y:None
+            height:"40dp"
+    AnchorLayout:
+        anchor_x:"center"
+        anchor_y:"top"
+        Label:
+            id:lab
+            size_hint:.3, .4
+            text:""
+            color:0,0,0,1
+            font_size:35
+    AnchorLayout:
+        anchor_x:"center"
+        anchor_y:"bottom"
+        Button:
+            text:"Calcule"
+            size_hint:.5, .1
+            on_release:root.calcula(self)

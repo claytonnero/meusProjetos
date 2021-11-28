@@ -1,0 +1,11 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/Progs/NeroProgs/Kivy/Lista de exercícios python/2-Estrutura de decisão/5-aprovação_e_média/.kivy/logs/kivy_20-09-27_1.txt
+[INFO   ] Kivy: v1.11.1
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.8.3 (default, Jun 15 2020, 02:19:10) 
+[GCC 9.3.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] Factory: 184 symbols loaded
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/Progs/NeroProgs/Kivy/Lista de exercícios python/2-Estrutura de decisão/5-aprovação_e_média/main.py", line 6, in <module>
+[WARNING] stderr:     from kivy.base import RunTouchApp 
+[WARNING] stderr: ImportError: cannot import name 'RunTouchApp' from 'kivy.base' (/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.8/site-packages/kivy/base.py)

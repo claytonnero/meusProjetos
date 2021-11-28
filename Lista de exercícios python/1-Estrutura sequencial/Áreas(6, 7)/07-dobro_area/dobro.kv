@@ -1,0 +1,27 @@
+<Area>:
+    orientation:"vertical"
+    Label:
+        text:"Este programa mostra ao usuário \no dobro da área quadrada "
+    Widget:
+    TextInput:
+        id:ent1
+        hint_text:"Digite a altura"
+        size_hint_y:None
+        height:"40dp"
+        input_filter:"float"
+        multiline:False
+    TextInput:
+        id:ent2
+        hint_text:"Digite a largura"
+        size_hint_y:None
+        height:"40dp"
+        input_filter:"float"
+        multiline:False
+    Label:
+        id:lab
+        text:"Resultado"
+    Widget:
+    Button:
+        text:"Calcular"
+        on_release:lab.text = "O Dobro de {:.2f} \né {:.2f}".format(float(ent1.text) * float(ent2.text), float(ent1.text) * float(ent2.text) * 2)
+        

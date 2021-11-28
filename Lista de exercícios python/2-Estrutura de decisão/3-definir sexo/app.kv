@@ -1,0 +1,18 @@
+<Roda>:
+    orientation:"vertical"
+    Widget:
+    TextInput:
+        id:ent
+        hint_text:"Informe o sexo"
+        multiline:False
+        size_hint_y:None
+        height:"40dp"
+    Widget:
+    Label:
+        id:lab
+        text:"Resultado"
+        color:0,1,0,1
+    Widget:
+    Button:
+        text:"Veificar"
+        on_release:root.apertado(self)

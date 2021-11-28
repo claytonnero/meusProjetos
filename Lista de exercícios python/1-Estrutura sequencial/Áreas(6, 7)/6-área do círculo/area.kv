@@ -1,0 +1,21 @@
+<Circulo>:
+    orientation:"vertical"
+    Label:
+        text:"Programa para calcular\nÁrea do círculo"
+    Widget:
+        size_hint_y:.3
+    TextInput:
+        id:ent
+        size_hint_y:None
+        height:"40dp"
+        hint_text:"Digite o Raio para calcular a área"
+        multiline: False
+        input_filter:"float" 
+    Widget:
+    Label:
+        id:lab
+        text:"Resultado"         
+    Widget:
+    Button:
+        text:"Calcular"
+        on_release:root.calcula(self)

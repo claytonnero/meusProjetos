@@ -1,0 +1,36 @@
+BoxLayout:
+    orientation:"vertical"
+    padding:15
+    Widget:
+    Calcula:
+        size_hint_y:None
+        height:"100dp"  
+    Widget:
+<Calcula>:
+    orientation:"vertical"
+    BoxLayout:
+        TextInput:
+            id:num1
+            hint_text:"Digite um número"
+            size_hint_y:None
+            height:"40dp"
+            multiline:False
+        TextInput:
+            id:num2
+            hint_text:"Digite outro numero"
+            size_hint_y:None 
+            height:"40dp"
+            multiline:False
+    Widget:
+    Label:
+        id:lab
+        text:"Resultado"
+        color:0,0,0,1
+        size_hint_y:4
+    Widget:
+    Button:
+        text:"Calcula"
+        size_hint_y:None
+        height:"40dp"
+        on_release:root.calcula(self)
+    Widget:

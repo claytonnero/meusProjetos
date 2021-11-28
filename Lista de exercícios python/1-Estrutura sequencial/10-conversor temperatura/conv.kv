@@ -1,0 +1,25 @@
+<Faz>:
+    orientation:"vertical"
+    Widget:
+    Label:
+        text:"Programa para converter graus Fahrenheit em Celsius"
+    TextInput:
+        id:ent
+        hint_text:"Digite os graus fahrenheit que converterá para Celsius"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+    Widget:
+    Label:
+        id:lab
+        text:"Resultado"
+        font_size:40
+    Button:
+        text:"Calcular"
+        on_release:lab.text = "O resultado da conversão é \n{:.2f}°F (Farenheit)".format((float(ent.text) - 32) * 5/9)
+        size_hint_y:None
+        height:"80dp"
+    Widget:
+        size_hint_y:.4
+        

@@ -1,0 +1,14 @@
+BoxLayout:
+    orientation:"vertical"
+    Widget:
+        size_hint_y:.3
+    Label:
+        id:lab
+        text:"Resultado" if imp.text == "" else "Seu peso ideal é\n{:.2f}".format(72.7 * float(imp.text) - 58)
+    TextInput:
+        id:imp
+        hint_text:"Informe a altura"
+        size_hint_y:None
+        height:"40dp"
+        input_filter:"float"
+    Widget:

@@ -1,0 +1,41 @@
+<Calcula>:
+    orientation:"vertical"
+    padding:"10dp"
+    spacing:"5dp"
+    Label:
+        id:lab
+        text:"Resultado"
+    Widget:
+    TextInput:
+        id:ent1
+        hint_text:"Nota 1"
+        input_filter:"int"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False     
+    TextInput:
+        id:ent2
+        hint_text:"Nota 2"
+        input_filter:"int"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+    TextInput:
+        id:ent3
+        hint_text:"Nota 3"
+        input_filter:"int"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+    TextInput:
+        id:ent4
+        hint_text:"Nota 4"
+        input_filter:"int"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+    Widget:
+    Button:
+        text:"Calcular"
+        id:but
+        on_release:root.media(self)

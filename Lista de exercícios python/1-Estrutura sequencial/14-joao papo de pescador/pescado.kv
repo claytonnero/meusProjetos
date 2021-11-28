@@ -1,0 +1,20 @@
+<Calculando>:
+    orientation:"vertical"
+    padding:80, 70
+    Widget:
+        size_hint_y:.2
+    Label:
+        id:resultado
+        text:"Resultado"
+        font_size:"30dp"
+    TextInput:
+        id:peso
+        input_filter:"float"
+        hint_text:"Digite Quantos KGs de pescado"
+        multiline:False
+        size_hint_y:None
+        height:"40dp"     
+    Widget:
+    Button:
+        text:"Calcular"
+        on_release:root.processa(self)

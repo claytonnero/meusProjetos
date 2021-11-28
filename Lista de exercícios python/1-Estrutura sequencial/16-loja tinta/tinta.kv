@@ -1,0 +1,36 @@
+<Pintura>:
+    orientation:"vertical"
+    padding:"20dp"
+    spacing:"10dp"
+    Widget:
+        size_hint_y:.3
+    Label:
+        text:"Programa para calcular quantidade \nde tinta baseado na área a ser pintada"
+        color:0,1,0,1
+        font_size:30
+    TextInput:
+        id:altura
+        hint_text:"Digite a altura da parede a ser pintada"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+    TextInput:
+        id:largura
+        hint_text:"Digite a largura da parede a ser pintada"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+    Label:
+        id:lab
+        text:"Resultado"
+        color:0,0.6,1,1
+        font_size:40
+        size_hint_y:2
+    Widget:
+        size_hint_y:.3
+    Button:
+        id:but
+        text:"Calcular"
+        on_release:root.calcula(self)

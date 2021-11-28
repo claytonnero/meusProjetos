@@ -1,0 +1,22 @@
+BoxLayout:
+    orientation:"vertical"
+    Label:
+        size_hint_y:.3
+        text:"Programa que converte graus fahrenheit em Celsius"
+    TextInput:
+        id:ent1
+        multiline:False
+        hint_text:"Quantos graus fahrenheit quer converter para Celsius?"
+        size_hint_y:None
+        height:"40dp"
+        input_filter:"int"
+    Label:
+        id:lab
+        text:"Resultado"
+        font_size:40
+    Button:
+        size_hint_y:None
+        height:"60dp"
+        text:"Calcular"
+        font_size:40
+        on_release:lab.text = "Resultado" if ent1.text == "" else " {:.3f}°C Graus Celsius".format((int(ent1.text) - 32) * 5/9)

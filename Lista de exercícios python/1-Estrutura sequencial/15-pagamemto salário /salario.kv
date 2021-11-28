@@ -1,0 +1,38 @@
+<Recebimento>:
+    orientation:"vertical"
+    padding:"20dp"
+    spacing:"10dp"
+    Widget:
+        size_hint_y:.4
+    Label:
+        text:"programa que calcula\no salário do funcionário"
+    TextInput:
+        id:valor
+        hint_text:"Digite quanto ganha por hora"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+        text:""
+    TextInput:
+        id:horas
+        hint_text:"Digite quantas horas trabahadas"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+        text:""
+    Widget:
+        size_hint_y:.3
+    Label:
+        id:lab
+        text:"Resultado"
+    Widget:
+        size_hint_y:.4
+    Button:
+        id:but
+        text:"Calcule"
+        size_hint_y:None
+        height:"60dp"
+        on_release:root.salario(self)
+        

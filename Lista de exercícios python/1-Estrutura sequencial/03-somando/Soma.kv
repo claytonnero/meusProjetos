@@ -1,0 +1,19 @@
+BoxLayout:
+    orientation:"vertical"
+    Label:
+        id:lab
+        text:"Resultado "
+    Widget:
+    TextInput:
+        id:n1
+        size_hint_y:.3
+        input_filter:"int"
+    TextInput:
+        id:n2
+        size_hint_y:.3
+        input_filter:"float"
+    Widget:
+        size_hint_y:2
+    Button:
+        text:"Calcular"
+        on_release:lab.text = str(int(n1.text) + float(n2.text))

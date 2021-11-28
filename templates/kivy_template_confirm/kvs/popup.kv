@@ -1,0 +1,18 @@
+<Confirma>:
+    title:"Quer mesmo sair?"
+    size_hint:None, None
+    size:("250dp", "150dp")
+    content:root.contem()
+
+<Contem>:
+    orientation:"vertical"
+    Widget:
+    BoxLayout:
+        spacing:"15dp"
+        Botao:
+            text:"Sim"
+            on_release:root.sim(self)
+        Botao:
+            text:"Nao"
+            #show de referencia! ufa!! kkkk
+            on_release:app.root.get_screen("menu").pop.dismiss()

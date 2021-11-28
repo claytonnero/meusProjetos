@@ -1,0 +1,70 @@
+Gerente:
+	Rodando:
+		name:"rodando"
+	Calcula:
+		name:"calcula"
+
+<Rodando>:
+	BoxLayout:
+		id:total
+		orientation:"vertical"
+		Label:
+			id:ref
+			text:"Tela Rodando"
+			size_hint_y:None
+			height:"40dp"
+		BoxLayout:
+			id:geral
+			orientation:"vertical"			
+			Widget:
+				size_hint_y:.5
+			Button:
+				size_hint_y:None
+				height:"60dp"
+				text:"calcule"
+				on_release:root.calcule(self)
+			Label:
+				text:"Com qual medida quer seu instrumento?"
+				size_hint_y:None
+				height:"40dp"
+			TextInput:
+				id:medida
+				size_hint_y:None
+				height:"40dp"
+				multiline:False
+				hint_text:"Qual medida?"
+			Label:
+				text:"Com quantas casas quer seu instrumento?"
+				size_hint_y:None
+				height:"40dp"
+			TextInput:
+				id:casas
+				size_hint_y:None
+				height:"40dp"
+				multiline:False
+				hint_text:"Quantas casas?"
+			Widget:			
+
+<Calcula>:
+	BoxLayout:
+		orientation:"vertical"
+		Label:
+			size_hint_y:None
+			height:"60dp"
+			text:"Tela Calcula"
+		BoxLayout:		
+			
+			ScrollView:	
+				BoxLayout:
+					orientation:"vertical"
+					id:mostra
+					size_hint_y:None
+					height:self.minimum_height
+		BoxLayout:
+			size_hint_y:None
+			height:"60dp"
+			Widget:
+			Button:
+				text:"Voltar"
+				on_release:root.voltar(self)
+			Widget:

@@ -1,0 +1,25 @@
+<Converte>:
+    orientation:"vertical"
+    Label:
+        font_size:30
+        text:"programa que converte\nMetros em centímetros"
+    Widget:
+        size_hint_y:.4
+    Label:
+        id:lab
+        font_size:70
+        text:"resultado"
+    TextInput:
+        id:ent
+        font_size:30
+        input_filter:"int"
+        hint_text:"entre com a metragem"
+        size_hint_y:None
+        height:"40dp"
+    Widget:
+    BoxLayout:
+        padding:"25dp"
+        Button:
+            font_size:30 
+            text:"Converter"
+            on_release:root.converte(self)

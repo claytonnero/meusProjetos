@@ -1,0 +1,37 @@
+<Verifica>:
+    padding:"15dp"
+    spacing:"5dp"
+    orientation:"vertical"
+    Widget:
+        size_hint_y:.1
+    Label:
+        text:"Programa para calcular o peso ideal\n para homens e mulheres"
+        size_hint_y:.3
+    ToggleButton:
+        state:"down"
+        text:"Mulher"
+        id:but_tog
+        on_release:root.calculando(self)
+        size_hint_y:None
+        height:"60dp"
+    Label:
+        id:lab
+        size_hint_y:.8
+        text:"Resultado"
+        font_size:50
+    TextInput:
+        id:imp
+        hint_text:"entre com a altura"
+        input_filter:"float"
+        size_hint_y:None
+        height:"40dp"
+    Label:
+        id:info
+        text:"Estou acima do peso?"
+    Button:
+        id:but
+        text:"Calcule"
+        on_release:root.calcula(self)
+        size_hint_y:None
+        height:"60dp"
+    Widget:

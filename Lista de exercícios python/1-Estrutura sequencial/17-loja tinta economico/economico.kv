@@ -1,0 +1,41 @@
+<Tela>:
+    orientation:"vertical"
+    padding:"20dp"
+    spacing:"15dp"
+    Label:
+        size_hint_y:.5
+        text:"Programa para calcular quantidade de tinta por área\n quadrada oferecendo possibilidade\nde baratear o produto"
+        color:0,0,0,1
+    Widget:
+        size_hint_y:.2
+    TextInput:
+        id:largura
+        multiline:False
+        input_filter:"float"
+        hint_text:"Digite a largura da área a ser pintada"
+        size_hint_y:None
+        height:"40dp"
+    TextInput:
+        id:altura
+        multiline:False
+        input_filter:"float"
+        hint_text:"Digite a altura da área a ser pintada"
+        size_hint_y:None
+        height:"40dp"
+    Label:
+        id:lab
+        text:"Calcular"
+        color:1,0.6,0,1
+        font_size:26
+        outline_width:1
+	    outline_color:0,1,0,1
+	    size_hint_y:5
+    Widget:
+        size_hint_y:.2
+    Button:
+        id:but
+        text:"Calcular"
+        size_hint_y:None
+        height:"60dp"   
+        background_color:0,1,0,1     
+        on_release:root.calculo(self)

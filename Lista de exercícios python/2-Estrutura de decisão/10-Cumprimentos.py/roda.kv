@@ -1,0 +1,41 @@
+<Rodando>:
+    orientation:"vertical"   
+    canvas.before:
+        Color:
+            rgba:0, 1, 0.5, 1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    Label:
+        text:"Escolha o período que estuda"
+        font_size:30
+        color:0,0,0,1
+        size_hint_y:.3        
+    BoxLayout:
+        size_hint_y:None
+        height:"100dp"
+        Button:
+            text:"Matutino"
+            on_release:root.manha()
+        Button:
+            text:"Vespertino"
+            on_release:root.tarde()
+        Button:
+            text:"Noturno"
+            on_release:root.noite()
+        Button:
+            text:"Outro"
+            on_release:root.outro()
+    Widget:
+        size_hint_y:.1
+    Label:
+        id:lab
+        canvas.before:
+            Color:
+                rgba:1, 1, 1, 1
+            Rectangle:
+                size:self.size
+                pos:self.pos
+        text:"Resultado"
+        color:0, 0, 0, 1
+        font_size:35

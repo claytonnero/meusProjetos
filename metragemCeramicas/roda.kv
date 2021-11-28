@@ -1,0 +1,53 @@
+<Rodando>:
+	orientation:"vertical"
+	padding:"20dp"
+	spacing:"20dp"
+	
+	lab:label
+	alt:altura
+	larg:largura
+	but:butao
+	quant:quantidade
+	val:valor
+	
+	BoxLayout:
+		padding:"20dp"
+		spacing:"50dp"
+		size_hint_y:None
+		height:"70dp"
+		
+		TextInput:
+			id:altura
+			multiline:False
+		TextInput:
+			id:largura
+			multiline:False
+	TextInput:
+		id:quantidade
+		multiline:False
+		size_hint_y:None
+		height:"40dp"
+		size_hint_x:None
+		width:"60dp"
+		pos_hint:{"center_x":.5}
+	TextInput:
+		id:valor
+		hint_text:"valor"
+		text:"20.00"
+		multiline:False
+		size_hint_y:None
+		height:"40dp"
+		size_hint_x:None
+		width:"60dp"
+		pos_hint:{"center_x":.5}	
+	Button:
+		id:butao
+		size_hint:.5, .2
+		pos_hint:{"center_x": .5}
+	Widget:
+		size_hint_y:.3
+	Label:
+		id:label
+	Widget:
+		size_hint_y:.3		
+	

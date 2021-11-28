@@ -1,0 +1,34 @@
+<Rodando>:
+    orientation:"vertical"
+    Label:
+        id:lab1
+        text:""
+    Widget:
+    GridLayout:
+        cols:3
+        Widget:
+            size_hint_x:.5
+        TextInput:
+            id:sal
+            hint_text:"Digite o valor do seu salário"
+            size_hint_y:None
+            height:"40dp"
+            multiline:False
+            input_filter:"float"
+        Widget:
+            size_hint_x:.5
+    Widget:
+    Label:
+        id:lab
+        text:"Resultado"
+        font_size:40
+    Widget:
+    BoxLayout:
+        Widget:
+        Button:
+            size_hint_y:None
+            heigth:"40dp"
+            text:"Calcule"
+            on_release:root.apertado(self)
+        Widget:
+        

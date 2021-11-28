@@ -1,0 +1,48 @@
+<Rodando>:
+    orientation:"vertical"
+    padding:10
+    Label:
+        id:lab
+        text:"Deu Certo"
+        size_hint_y:.5
+    GridLayout:
+        cols:3
+        Widget:
+            size_hint_y:.5
+            size_hint_x: .5
+        TextInput:
+            id:ent
+            hint_text:"Digite a primeira nota"
+            size_hint_y:None
+            height:"40dp"
+            input_filter:"int"
+            multiline:False
+        Widget:
+            size_hint_y:.5
+            size_hint_x:.5
+        Widget:
+            size_hint_y:.5
+            size_hint_x:.5
+        TextInput:
+            id:ent1
+            hint_text:"Digite a segunda nota"
+            size_hint_y:None
+            height:"40dp"
+            input_filter:"int"
+            multiline:False
+        Widget:
+            size_hint_y:.5
+            size_hint_x:.5
+    BoxLayout:
+        orientation:"vertical"
+        Widget:
+        GridLayout:
+            cols:3
+            Widget:
+            Button:
+                text:"Calcule"
+                size_hint_y:None
+                height:"60dp"
+                on_release:root.apertado(self)
+            Widget:
+        

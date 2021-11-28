@@ -1,0 +1,60 @@
+<Calcular>:
+    orientation:"vertical"
+    padding:"15dp"
+    spacing:"10dp"
+    Widget:
+        size_hint_y:.05
+    BoxLayout:
+        size_hint_y:None
+        height:"40dp"
+        
+        TextInput:
+            id:tamanho
+            hint_text:"Digite o tamanho de seu Download"
+            hint_text_color :0,0,0,1
+            multiline:False
+            input_filter:"float"
+        Widget:
+            size_hint_x:.2
+        Spinner:
+            id:megas
+            text:"Mb"
+            values:["Bits", "Bytes", "Kb", "Mb", "Gb", "Tb", "Pb", "Hb"]
+            size_hint_x:.3
+    BoxLayout:
+        size_hint_y:None
+        height:"40dp"
+        
+        TextInput:
+            id:velocidade
+            hint_text:"Digite a velocidade de sua internet"
+            hint_text_color:1,0,0,1
+            multiline:False
+            input_filter:"float"
+        Widget:
+            size_hint_x:.2
+        Spinner:
+            id:velo
+            text:"Mbps"
+            values:["Kbps", "Mbps", "Gbps"]
+            size_hint_x:.3    
+    
+    Label:
+        text:"Programa que calcula o tempo\nde um determinado Download"
+        color:0, 0, 2, 1
+        size_hint_y:.6
+    Widget:
+        size_hint_y:.05
+    Label:
+        id:lab
+        text:"Resultado"
+        color:0,0,0,1
+    Widget:
+        size_hint_y:.05
+    Button:
+        id:but
+        size_hint_y:None
+        height:"60dp"
+        text:"Calcule"
+        background_color:0,1,0,1
+        on_release:root.apertado(self)

@@ -1,0 +1,40 @@
+<Acontece>:
+    orientation:"vertical"
+    padding:"20dp"
+    spacing:"10dp"
+    Label:
+        text:"Programa para fazer diversos calculos"
+    Widget:
+        size_hint_y:.2
+    TextInput:
+        id:ent1
+        hint_text:"Entre com o primeiro número inteiro "
+        multiline:False
+        input_filter:"int"
+        size_hint_y:None
+        height:"40dp"        
+    TextInput:
+        id:ent2
+        hint_text:"Entre com o segundo número inteiro"
+        multiline:False
+        input_filter:"int"
+        size_hint_y:None
+        height:"40dp"        
+    TextInput:
+        id:ent3
+        hint_text:"Entre agora com um número real ex:(2.67)"
+        multiline:False
+        input_filter:"float"
+        size_hint_y:None
+        height:"40dp"        
+    Label:
+        id:lab
+        text:"Resultado"
+        font_size:28
+        size_hint_y:3
+    Button:
+        text:"Calcular"
+        on_release:root.calcula(self)
+        size_hint_y:None 
+        height:"60dp"
+    Widget:

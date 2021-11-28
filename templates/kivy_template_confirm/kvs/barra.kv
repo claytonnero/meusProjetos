@@ -1,0 +1,14 @@
+<Barra>:
+    canvas:
+        Color:
+            rgba:1,1,1,.4
+        Rectangle:
+            size:self.size
+            pos:self.pos
+	pos_hint:{'top': 1}
+	ActionView:
+		ActionPrevious:
+			id:act
+			title:'Voltar Menú'
+			color:0,1,1,1
+			on_release:app.root.current = 'menu'

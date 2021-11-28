@@ -1,0 +1,18 @@
+BoxLayout:
+    orientation:"vertical"
+    Label:
+        id:result
+        text:"Resultado" if imp.text == "" else imp.text
+        font_size:"30sp"
+    Label:
+        text:"Informe um Número!"
+        size_hint_y:.3
+    TextInput:
+        id:imp
+        hint_text:"digite apenas numeros inteiros"
+        input_filter:"int"
+        size_hint_y:.2
+        multiline:False
+    Widget:
+        size_hint_y:1.5
+    

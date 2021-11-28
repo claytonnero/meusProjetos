@@ -1,0 +1,27 @@
+BoxLayout:
+    orientation:"vertical"
+    padding:30
+    Widget:
+    Label:
+        text:"Calcula o salário do funcionário"
+    TextInput:
+        id:valor
+        hint_text:"Quanto ganha por hora?"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+    TextInput:
+        id:horas
+        hint_text:"Quantas horas trabalhadas no mês?"
+        size_hint_y:None
+        height:"40dp"
+        multiline:False
+        input_filter:"float"
+    Label:
+        id:lab
+        text:"Resultado"
+        font_size:40
+    Button:
+        text:"Calcular"
+        on_release:lab.text = " Você receberá este mês \n{} Reais!".format(float(valor.text) * float(horas.text))       

@@ -1,0 +1,24 @@
+<Corpo>:
+    orientation:"vertical"
+    Label:
+        text:"Programa para calcular a média entre dois números!"
+    Label:
+        id:lab
+        size_hint_y:1.7
+        text:"Resultado"
+    TextInput:
+        id:ent1
+        size_hint_y:None
+        height:"40dp"
+        #size_hint_x:.7
+    TextInput:
+        id:ent2
+        size_hint_y:None
+        height:"40dp"
+        #size_hint_x:.7
+    Widget:
+        size_hint_y:1.5
+    Button:
+        id:botao
+        text:"Calcular"
+        on_release:root.acontece(self)

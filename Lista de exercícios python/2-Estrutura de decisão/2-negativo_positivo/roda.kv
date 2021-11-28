@@ -1,0 +1,20 @@
+<Rodando>:
+    orientation:"vertical"
+    padding:"10dp"
+    Widget:
+    TextInput:
+        id:ent
+        size_hint_y:None
+        heigth:"40dp"
+        multiline:False
+        input_filter:"float"
+        hint_text:"Digite algum Número"
+    Widget:
+    Label:
+        id:lab
+        text:"Resultado"
+        font_size:30
+    Widget:
+    Button:
+        text:"Verifique"
+        on_release:root.apertado(self)
